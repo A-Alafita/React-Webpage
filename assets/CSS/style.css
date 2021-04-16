@@ -68,6 +68,8 @@ body{
     border-radius:2px;
     cursor:pointer;
     position:relative;
+    margin-right: 2%;
+    margin-left:  2%;
 }
 
 .signUp{
