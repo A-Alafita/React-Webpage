@@ -122,4 +122,7 @@ body{
     text-align: center;
 }
 
-
+.border {
+    margin: 0 0 1rem 0;
+    box-sizing: border-box;
+}
