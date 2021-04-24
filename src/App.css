@@ -1,5 +1,5 @@
 body{ 
-    background: url("../images/bg01.jpg") no-repeat center center fixed;
+    background: url("images/bg01.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,19 +57,19 @@ body{
 }
 
 .btn{
-    color:#fff;
-    background-color:#35b38d;
-    outline: none;
-    border: 0;
-    color: #fff;
-    padding:10px 20px;
-    text-transform:uppercase;
-    margin-top:50px;
-    border-radius:2px;
-    cursor:pointer;
-    position:relative;
-    margin-right: 2%;
-    margin-left:  2%;
+    color:#fff!important;
+    background-color:#35b38d !important; 
+    outline: none!important;
+    border: 0!important;
+    color: #fff!important;
+    padding:10px 20px!important;
+    text-transform:uppercase!important;
+    margin-top:50px!important;
+    border-radius:2px!important;
+    cursor:pointer!important;
+    position:relative!important;
+    margin-right: 2%!important;
+    margin-left:  2%!important;
 }
 
 .signUp{
@@ -113,6 +113,7 @@ body{
     background-color: #35b38d;
 }
 
+
 .aboutText {
     display: flex;
 }
@@ -125,4 +126,8 @@ body{
 .border {
     margin: 0 0 1rem 0;
     box-sizing: border-box;
+}
+
+.nav{
+    position: absolute;
 }
