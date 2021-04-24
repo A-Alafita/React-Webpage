@@ -1,10 +1,7 @@
-import './App.css';
+import '../CSS/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
-import Portal from './Portal'
-import { Route, Switch } from 'react-router-dom'
-import Navigation from './Navigation'
 
 
 function App() {

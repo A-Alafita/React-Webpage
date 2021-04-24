@@ -1,26 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './CSS/index.css';
 import reportWebVitals from './reportWebVitals';
-// import { BrowserRouter as Router } from 'react-router-dom';
 import {BrowserRouter, Route,Switch} from 'react-router-dom'; 
-import Portal from './Portal';
+import Portal from './Pages/Portal';
+import App from './Pages/App';
+
 ReactDOM.render(
-  
   <BrowserRouter>
     <Switch>
-      <Route exact path = '/' component = {App} />
       <Route path = '/Portal' component ={Portal}/>
+      <Route exact path = '/' component = {App}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
-
-  //!last working part 
-  // <Router>
-  //   <App/>
-  // </Router>, 
-
 );
 
 // If you want to start measuring performance in your app, pass a function
