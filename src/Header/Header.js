@@ -1,6 +1,4 @@
-
 import Navbar from './Navigation'
-
 
 function Header() {
     return (
