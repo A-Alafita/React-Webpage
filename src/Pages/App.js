@@ -11,7 +11,7 @@ function App() {
       <form action="">
         <span className="text-center">Welcome to Valgrind</span>
         <div className="input-container">
-          <input type="email" required="required" placeholder="User@gmail.com" />
+          <input type="email" required="required" placeholder="User@gmail.com" href='/UserProfile' />
           <label>User:
           </label>
         </div>
