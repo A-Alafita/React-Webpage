@@ -1,0 +1,27 @@
+.sideNav{
+    background-color: #2e353d !important;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 0px; 
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 100%;
+}
+
+.optionBox{
+    top: 10px;
+    left: 20px;
+    position: fixed;
+}
+
+.optionsAt{
+    padding: 10px 100px 10px 20px;
+    background-color: aquamarine;
+
+    color: #2e353d !important;
+    text-transform: uppercase;
+}
+.options{
+    padding: 10px 10px 10px 20px;
+}
