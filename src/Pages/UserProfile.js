@@ -1,5 +1,7 @@
-import { Form, Button, FormGroup, FormControl, ControlLabel, Col, InputGroup } from "react-bootstrap";
-
+import Button from 'react-bootstrap/Button';
+import '../CSS/UserProfile.css';
+import UserProfileBox from './UserProfileBox';
+import Header from "../Header/Header"
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -9,29 +11,17 @@ import { Form, Button, FormGroup, FormControl, ControlLabel, Col, InputGroup } f
 
 function UserProfile(){
     return(
-        <Form>
-            <Form.Row className="align-items-center">
-            <Col sm={3} className="my-1">
-                <Form.Label htmlFor="inlineFormInputName" srOnly>Name</Form.Label>
-                <Form.Control id="inlineFormInputName" placeholder="Jane Doe" />
-            </Col>
-            <Col sm={3} className="my-1">
-                <Form.Label htmlFor="inlineFormInputGroupUsername" srOnly>Username</Form.Label>
-                <InputGroup>
-                    <InputGroup.Prepend>
-                        <InputGroup.Text>@</InputGroup.Text>
-                    </InputGroup.Prepend>
-                    <FormControl id="inlineFormInputGroupUsername" placeholder="Username" />
-                </InputGroup>
-            </Col>
-            <Col xs="auto" className="my-1">
-                <Form.Check type="checkbox" id="autoSizingCheck2" label="Remember me" />
-            </Col>
-            <Col xs="auto" className="my-1">
-                <Button type="submit">Submit</Button>
-            </Col>
-            </Form.Row>
-        </Form>
+        <div>
+            <div className ='sideNav'>
+                <Header />
+            </div>
+            <div >
+                <h1>User page</h1>
+            </div>
+            <div className="UserFrom">
+                <UserProfileBox />
+            </div>
+        </div>
     )
 }
 
