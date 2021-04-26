@@ -1,16 +1,8 @@
-/* body{ 
-    background: no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
-} */
-
-.topnav {
+/* .topnav {
   background-color: #333;
   overflow: hidden;
-}
+} */
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -54,12 +46,11 @@
 }
 
 .welcome-box{
-    position:absolute;
-    left:50%;
+    position:fixed;
     top:50%;
+    left:50%;
     transform: translate(-50%,-50%);
     background-color: rgba(0, 0, 0, 200);
-    /* background-color: rgba(0, 0, 0, 0.89); */
     border-radius:5px;
     padding: 10em 10em 10em;
     transition: 5s;
@@ -76,14 +67,10 @@
 }
 
 .sideNav{
- overflow: auto;
-  font-family: verdana;
-  font-size: 12px;
-  font-weight: 200;
   background-color: #2e353d;
   position: fixed;
   top: 0px;
-  width: 300px;
+  width: 250px;
   height: 100%;
-  color: #e1ffff;
+  align-items: stretch;
 }
