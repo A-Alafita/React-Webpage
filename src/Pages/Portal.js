@@ -5,7 +5,7 @@ import Navigation from '../Header/Navigation'
 function Portal() {
     return (
         <div>
-            <Navigation/>
+            <Navigation tab = '1' />
             <div className='welcome-box'>
                 <p>Welcome</p>
             </div>

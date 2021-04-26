@@ -1,8 +1,6 @@
 .sideNav{
     background-color: #2e353d !important;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 0px; 
+
     position: fixed;
     top: 0px;
     width: 250px;
@@ -32,11 +30,8 @@
     align-items: stretch;
 }
 
-#sidebar{
-    background-color: #2e353d;
-    display: flex;
-    align-items: stretch;
-}
-#sidebar.active{
-    margin-left: -250px;
+.tab{
+    width: 200px  !important;
+    padding-right: 20px;
+    font-size: large;
 }
