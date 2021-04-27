@@ -5,12 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route,Switch} from 'react-router-dom'; 
 import Portal from './Pages/Portal';
 import App from './Pages/App';
+import UserProfile from './Pages/UserProfile'
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path = '/Portal' component ={Portal}/>
       <Route exact path = '/' component = {App}/>
+      <Route path = '/UserProfile' component ={UserProfile}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
