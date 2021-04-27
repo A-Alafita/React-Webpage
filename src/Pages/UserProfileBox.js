@@ -18,6 +18,7 @@ function UserProfileBox(){
                     <p>Complete your profile</p>
                 </div>
                 <div>
+                    
                     <div className="OutDiv">
                         <div className="input">
                             <input type="text" required="required" placeholder="First Name"/>
