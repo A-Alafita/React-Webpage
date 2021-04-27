@@ -1,17 +1,14 @@
 .welcome-box{
   position:flex;
-  height: 95%;
-  /* width: calc(75% + 50px); */
-  width: 80%;
-  max-width: 80%;
-  
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, .8);
-  border-radius: 5%; 
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate( -44%  , -50%);
-
+  overflow: hidden;
+  z-index: -1;
 }
 
 .parent{ 
@@ -27,4 +24,9 @@
   width: 250px;
   height: 100%;
   align-items: stretch;
+  z-index: 1;
+}
+
+.tasks{
+  z-index: 1;
 }
