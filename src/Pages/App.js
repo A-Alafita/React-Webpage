@@ -24,7 +24,7 @@ function App() {
           <Button variant="default me-md-2" className="btn">Registrar</Button>{''}
         </ButtonGroup>
       </form>
-    </div >
+    </div>
     </div>
   );
 }

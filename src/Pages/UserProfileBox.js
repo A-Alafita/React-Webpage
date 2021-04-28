@@ -13,18 +13,13 @@ function UserProfileBox(){
     return(
         <div>
             <form className="UserForm">
+                <div className="UserBoxTitle">
+                    <h2>Edit Profile</h2>
+                    <p>Complete your profile</p>
+                </div>
                 <div>
-                    <div>
-                        <div className="input">
-                            <input type="text" required="required" placeholder="Username" />
-                            <label>User</label>
-                        </div>
-                        <div className="input">
-                            <input type="email" required="required" placeholder="User@mail.com" />
-                            <label>Email</label>
-                        </div>
-                    </div>
-                    <div>
+                    
+                    <div className="OutDiv">
                         <div className="input">
                             <input type="text" required="required" placeholder="First Name"/>
                             <label>First Name</label>
@@ -33,8 +28,6 @@ function UserProfileBox(){
                             <input type="text" required="required" placeholder="Second Name"/>
                             <label>Second Name</label>
                         </div>
-                    </div>
-                    <div>
                         <div className="input">
                             <input type="text" required="required" placeholder="City"/>
                             <label>City</label>
@@ -48,8 +41,10 @@ function UserProfileBox(){
                             <label>Postal Code</label>
                         </div>
                     </div>
+                    <div>
+                        <button type="button" class="btn btn-light">Update</button>
+                    </div>
                 </div>
-                
             </form>
         </div>
     )
