@@ -5,17 +5,12 @@ import Navigation from '../Header/Navigation';
 import Tasks from '../Widgets/Tasks';
 function Portal() {
     return (
-    <div className = "tasks">
-        <Tasks/>
-        <div className = "parent">
-            <div className = "tasks">
-            </div>
-            <Navigation tab = '1' />
-            <div className='welcome-box'>
+        <div className='welcome-box'>
+            {/* <Navigation tab='1' /> */}
+            <div className="contanier">
+                <div> <Tasks /> </div>
             </div>
         </div>
-    </div>
-
     );
 }
 
