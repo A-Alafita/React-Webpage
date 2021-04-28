@@ -18,7 +18,7 @@ function UserProfile(){
             <div >
                 <h1>User page</h1>
             </div>
-            <div className="UserFrom">
+            <div>
                 <UserProfileBox />
             </div>
         </div>

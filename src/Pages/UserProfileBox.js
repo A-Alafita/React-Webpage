@@ -2,13 +2,6 @@ import Button from 'react-bootstrap/Button';
 import '../CSS/UserProfile.css';
 
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-  crossorigin="anonymous"
-/>
-
 function UserProfileBox(){
     return(
         <div>
@@ -42,7 +35,7 @@ function UserProfileBox(){
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-light">Update</button>
+                        <button type="button" className="btn-light">Update</button>
                     </div>
                 </div>
             </form>
