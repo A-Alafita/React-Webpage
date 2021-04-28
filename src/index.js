@@ -6,6 +6,7 @@ import {BrowserRouter, Route,Switch} from 'react-router-dom';
 import Portal from './Pages/Portal';
 import App from './Pages/App';
 import UserProfile from './Pages/UserProfile'
+import Register from './Pages/Register'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route exact path = '/' component = {App}/>
       <Route path = '/Portal' component ={Portal}/>
       <Route path = '/UserProfile' component ={UserProfile}/>
+      <Route path = '/Register' component ={Register}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
