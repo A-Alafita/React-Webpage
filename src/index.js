@@ -11,8 +11,8 @@ import Register from './Pages/Register'
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
+      <Route exact path = '/Webpage' component = {App}/>
       <Route path = '/Portal' component ={Portal}/>
-      <Route exact path = '/' component = {App}/>
       <Route path = '/UserProfile' component ={UserProfile}/>
       <Route path = '/Register' component ={Register}/>
     </Switch>
