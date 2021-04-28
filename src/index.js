@@ -10,8 +10,8 @@ import UserProfile from './Pages/UserProfile'
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path = '/Portal' component ={Portal}/>
       <Route exact path = '/' component = {App}/>
+      <Route path = '/Portal' component ={Portal}/>
       <Route path = '/UserProfile' component ={UserProfile}/>
     </Switch>
   </BrowserRouter>,

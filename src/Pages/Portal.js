@@ -6,7 +6,7 @@ import Tasks from '../Widgets/Tasks';
 function Portal() {
     return (
         <div className='welcome-box'>
-            {/* <Navigation tab='1' /> */}
+            <Navigation tab='1' />
             <div className="contanier">
                 <div> <Tasks /> </div>
             </div>

@@ -13,7 +13,7 @@ function UserProfile(){
     return(
         <div>
             <div className ='sideNav'>
-                <Navigation tab = '2'/>
+            <Navigation tab='2'/>
             </div>
             <div >
                 <h1>User page</h1>
