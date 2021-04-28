@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
 
-function App() {
+function Welcome() {
   return (
     <div>
     <div className='box'>
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default Welcome;
