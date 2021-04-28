@@ -14,13 +14,13 @@ function Navigation(props) {
                                 <Nav.Link aria-current href='/Portal' eventKey="1" className="tab"><DashBoard fontSize='large' />   Home</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link aria-current href='/UserProfile' eventKey="4" className='tab'> <AccountBoxIcon fontSize='large' eventKey='5'/> User Profile</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link aria-current href='/' eventKey="2" className='tab'>Testing</Nav.Link>
+                                <Nav.Link aria-current href='/UserProfile' eventKey="2" className='tab'> <AccountBoxIcon fontSize='large'/> User Profile</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link aria-current href='/' eventKey="3" className='tab'>Testing</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link aria-current href='/' eventKey="4" className='tab'>Testing</Nav.Link>
                             </Nav.Item>
 
                         </Nav>
