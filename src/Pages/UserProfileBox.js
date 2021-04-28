@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import '../CSS/UserProfile.css';
-
+import InputLabel from './InputLabel.js';
 
 <link
   rel="stylesheet"
@@ -10,6 +10,7 @@ import '../CSS/UserProfile.css';
 />
 
 function UserProfileBox(){
+    var arr = ["First Name","Second Name","City","Country","Postal Code"];
     return(
         <div>
             <form className="UserForm">
@@ -19,26 +20,9 @@ function UserProfileBox(){
                 </div>
                 <div>
                     <div className="OutDiv">
-                        <div className="input">
-                            <input type="text" required="required" placeholder="First Name"/>
-                            <label>First Name</label>
-                        </div>
-                        <div className="input">
-                            <input type="text" required="required" placeholder="Second Name"/>
-                            <label>Second Name</label>
-                        </div>
-                        <div className="input">
-                            <input type="text" required="required" placeholder="City"/>
-                            <label>City</label>
-                        </div>
-                        <div className="input">
-                            <input type="text" required="required" placeholder="Country"/>
-                            <label>Country</label>
-                        </div>
-                        <div className="input">
-                            <input type="text" required="required" placeholder="Postal Code"/>
-                            <label>Postal Code</label>
-                        </div>
+                        {arr.map((val) => {
+                            return (<InputLabel value={val}/>)
+                        })}
                     </div>
                     <div>
                         <button type="button" class="btn btn-light">Update</button>
