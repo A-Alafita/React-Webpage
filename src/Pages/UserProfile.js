@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import '../CSS/UserProfile.css';
 import UserProfileBox from './UserProfileBox';
-import Header from "../Header/Header"
+import Navigation from "../Header/Navigation";
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@ function UserProfile(){
     return(
         <div>
             <div className ='sideNav'>
-                <Header />
+                <Navigation tab = '2'/>
             </div>
             <div >
                 <h1>User page</h1>
