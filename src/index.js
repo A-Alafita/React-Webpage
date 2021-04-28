@@ -2,21 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './CSS/index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Switch, HashRouter, Link } from 'react-router-dom';
-import Portal from './Pages/Portal';
-import App from './Pages/Welcome';
-import UserProfile from './Pages/UserProfile';
-import Register from './Pages/Register';
-import Welcome from './Pages/Welcome';
+import { BrowserRouter, Route, Switch, HashRouter, Link } from 'react-router-dom';  
+import App from '../src/App';
+
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
+  <React.StrictMode>
+  <HashRouter>
+    {/* <Switch>
       <Route exact path = '/Webpage' component = {Welcome}/>
       <Route path = '/Portal' component ={Portal}/>
       <Route path = '/UserProfile' component ={UserProfile}/>
       <Route path = '/Register' component ={Register}/>
-    </Switch>
-   </BrowserRouter>,
+    </Switch> */}
+    <App/>
+
+  </HashRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

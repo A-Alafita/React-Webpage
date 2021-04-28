@@ -20,8 +20,8 @@ function Welcome() {
           <label>Password:</label>
         </div>
         <ButtonGroup aria-label="Toolbar">
-          <Button variant="default me-md-2" className="btn" href = '/Portal'>Ingresar</Button>{''}
-          <Button variant="default me-md-2" className="btn" href = '/Register'>Registrar</Button>{''}
+          <Button variant="default me-md-2" className="btn" href = '#/Portal'>Ingresar</Button>{''}
+          <Button variant="default me-md-2" className="btn" href = '#/Register'>Registrar</Button>{''}
         </ButtonGroup>
       </form>
     </div>
