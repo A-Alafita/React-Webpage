@@ -1,9 +1,11 @@
 h2{
     color: white;
+    font-size: 2vw;
 }
 
 p{
     color: white;
+    font-size: 1vw;
 }
 
 .RegisterForm{
@@ -47,7 +49,7 @@ p{
 .input label{
     top:0px;
     left:0px;
-    font-size:16px;
+    font-size: 100%;
     color:#fff;
     transition: all 0.5s ease-in-out;
 }
@@ -73,5 +75,11 @@ p{
 .input input:valid ~ label{
     top:-12px;
     font-size:12px;
+
+}
+
+.SubButton{
+    position: relative;
+    padding-top: -30%;
 
 }

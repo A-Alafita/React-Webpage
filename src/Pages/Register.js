@@ -1,16 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import '../CSS/RegisterStyle.css'
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-  crossorigin="anonymous"
-/>
-
 function Register(){
     return(
-        <div ClassName="RegisterBox">
+        <div className="RegisterBox">
             <form className="RegisterForm">
                 <div className="RegisterBoxTitle">
                     <h2>Create Your Profile</h2>
