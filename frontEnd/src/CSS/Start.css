@@ -27,9 +27,16 @@
   width: 250px;
   height: 100%;
   align-items: stretch;
-  z-index: 1;
+  z-index: -1;
 }
 
 .tasks{
+  z-index: 1;
+}
+
+
+.Card{
+  position: fixed;
+  justify-content: center;
   z-index: 1;
 }
