@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        minWith: 200,
+        marginRight: 30,
     },
     media: {
         height: 140,
@@ -39,12 +41,7 @@ export default function CardItem() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
-                <Button size="small" color="primary">
-                    Learn More
-                </Button>
+                {/* if you want todo something within the card you need  */}
             </CardActions>
         </Card>
     );
