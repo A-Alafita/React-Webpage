@@ -6,7 +6,7 @@ import cardContent from '@material-ui/core/CardContent'
 //
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles, useTheme, withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -23,6 +23,9 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+
+import HomeIcon from '@material-ui/icons/Home';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 
 const drawerWidth = 240;
 
@@ -80,13 +83,20 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'flex-end',
         padding: theme.spacing(0, 1),
         // necessary for content to be below app bar
-        ...theme.mixins.toolbar,
+        // ...theme.mixins.toolbar,
     },
     content: {
         flexGrow: 1,
         padding: theme.spacing(3),
     },
+
 }));
+
+const styles = {
+    paper: {
+        backgroundColor: 'backgroundColor:"#2e353d'
+    }
+}
 
 
 function Navigation(props) {
@@ -102,70 +112,68 @@ function Navigation(props) {
         setOpen(false);
     };
     return (
-
-        <div className={classes.root}>
-            <CssBaseline />
-            <AppBar
-                position="fixed"
-                className={clsx(classes.appBar, {
+        <withStyle>
+            <div className={classes.root}>
+                {/* <CssBaseline /> */}
+                <AppBar style={{ backgroundColor: "#2e353d" }} position="fixed" className={clsx(classes.appBar, {
                     [classes.appBarShift]: open,
                 })}
-            >
-                <Toolbar>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        onClick={handleDrawerOpen}
-                        edge="start"
-                        className={clsx(classes.menuButton, {
-                            [classes.hide]: open,
-                        })}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" noWrap>
-                        Mini variant drawer
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <Drawer
-                variant="permanent"
-                className={clsx(classes.drawer, {
-                    [classes.drawerOpen]: open,
-                    [classes.drawerClose]: !open,
-                })}
-                classes={{
-                    paper: clsx({
-                        [classes.drawerOpen]: open,
-                        [classes.drawerClose]: !open,
-                    }),
-                }}
-            >
-                <div className={classes.toolbar}>
-                    <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-                    </IconButton>
-                </div>
-                <Divider />
-                <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
+                >
+                    <Toolbar>
+                        <IconButton color="inherit"
+                            aria-label="open drawer"
+                            onClick={handleDrawerOpen}
+                            edge="start"
+                            className={clsx(classes.menuButton, {
+                                [classes.hide]: open,
+                            })}
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                        <Typography variant="h6" noWrap>
+
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+                <Drawer variant="permanent" className={clsx(classes.drawer, { [classes.drawerOpen]: open, [classes.drawerClose]: !open, })}
+                    classes={{
+                        paper: clsx({
+                            [classes.drawerOpen]: open,
+                            [classes.drawerClose]: !open,
+                        }),
+                    }}
+                >
+                    <div className={classes.toolbar} >
+                        <IconButton onClick={handleDrawerClose}>
+                            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+                        </IconButton>
+                    </div>
+                    <Divider />
+                    <List>
+                        {/* {['Home', 'Profile', 'Test', 'Test'].map((text, index) => (
+                            <ListItem button key={text}>
+                                {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
+                                {/* <ListItemText primary={text} />
+                            </ListItem> */}
+                        {/* ))} */}
+                        {['Home', 'Profile', 'Test', 'Test'].map((text, index) => (
+                        <ListItem button key = {text}> 
+                        <ListItemIcon>
+                            <HomeIcon {index == 1}/>
+                        </ListItemIcon>
+                            
                         </ListItem>
-                    ))}
-                </List>
-                <Divider />
-                <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
-            </Drawer>
-        </div>
+                        )}
+                        {/* <Nav variant="pills" activeKey={props.tab} className='flex-column'>
+                        <Nav.Item>
+                              <Nav.Link aria-current href='/Portal' eventKey="1" className="tab"><DashBoard fontSize='large' />   Home</Nav.Link>
+                         </Nav.Item>
+                        </Nav> */}
+                        
+                    </List>
+                </Drawer>
+            </div>
+        </withStyle>
         //!bootstrap Navbar
         // <div className='wrapper'>
         //     <Navbar bg="default" variant='dark' expand='lg' className="sideNav">
@@ -191,7 +199,7 @@ function Navigation(props) {
         //         </Navbar.Collapse>
         //     </Navbar>
         // </div>
-            );
+    );
 }
 
-            export default Navigation
+export default Navigation
