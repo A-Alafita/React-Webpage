@@ -8,15 +8,15 @@ p{
     font-size: 1vw;
 }
 
+
 .UserForm{
     position:absolute;
-    left:50%;
     top:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(30%,-50%);
     background-color: rgba(0, 0, 0, 0.89);
-    border-radius:20px;
-    height: 50%;
-    width: 50%;
+    border-radius:30px;
+    height: 90%;
+    width: 70%;
     /* padding: 10em 10em 10em; */
     /* display: inline-block; */
 }
@@ -26,9 +26,10 @@ p{
     text-align: center;
     background-color: #35b38d;
     position: absolute;
-    top: -5%;
+    top: -2.5%;
     width: 90%;
     left: 5%;
+    z-index: 2;
 }
 
 .OutDiv{
@@ -79,4 +80,11 @@ p{
 .SubButton{
     position: relative;
     left: 40%;
+}
+
+.updtButton {
+    color: white;
+    text-align: center;
+    background-color: #35b38d;
+    position: absolute;
 }

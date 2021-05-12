@@ -33,7 +33,7 @@ function Register(){
                         <button type="button" className="btn btn-light">Submit</button>
                     </div>
                 </div>
-            </form>
+            </form> 
         </div>
     )
 }

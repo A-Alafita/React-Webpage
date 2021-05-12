@@ -33,7 +33,7 @@ p{
 
 .OutDiv{
     position: relative;
-    padding-top: 15%;
+    padding-top: 8%;
 }
 
 .input{
@@ -80,6 +80,10 @@ p{
 
 .SubButton{
     position: relative;
-    padding-top: -30%;
+}
 
+
+
+input::placeholder{
+    font-size: 1vw;
 }
