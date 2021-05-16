@@ -8,6 +8,7 @@ import App from './Pages/Welcome';
 import UserProfile from './Pages/UserProfile';
 import Register from './Pages/Register';
 import Welcome from './Pages/Welcome';
+import Game from './Pages/Game'; 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Route path = '/Portal' component ={Portal}/>
       <Route path = '/UserProfile' component ={UserProfile}/>
       <Route path = '/Register' component ={Register}/>
+      <Route path = '/Game' component = {Game}/>
     </Switch>
    </BrowserRouter>,
   document.getElementById('root')

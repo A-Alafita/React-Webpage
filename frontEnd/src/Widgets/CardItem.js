@@ -19,24 +19,19 @@ const useStyles = makeStyles({
     },
 });
 
-export default function CardItem() {
+export default function CardItem(Props) {
     const classes = useStyles();
 
     return (
         <Card className={classes.root}>
             <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
-                />
+                <CardMedia />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        {Props.CardContent}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        {Props.subtext}
                     </Typography>
                 </CardContent>
             </CardActionArea>

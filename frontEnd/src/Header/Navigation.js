@@ -23,7 +23,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-
+import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 import HomeIcon from '@material-ui/icons/Home';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 
@@ -150,26 +150,17 @@ function Navigation(props) {
                     </div>
                     <Divider />
                     <List>
-                        {/* {['Home', 'Profile', 'Test', 'Test'].map((text, index) => (
-                            <ListItem button key={text}>
-                                {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
-                                {/* <ListItemText primary={text} />
-                            </ListItem> */}
-                        {/* ))} */}
-                        {['Home', 'Profile', 'Test', 'Test'].map((text, index) => (
-                        <ListItem button key = {text}> 
-                        <ListItemIcon>
-                            <HomeIcon {index == 1}/>
-                        </ListItemIcon>
-                            
-                        </ListItem>
-                        )}
-                        {/* <Nav variant="pills" activeKey={props.tab} className='flex-column'>
-                        <Nav.Item>
-                              <Nav.Link aria-current href='/Portal' eventKey="1" className="tab"><DashBoard fontSize='large' />   Home</Nav.Link>
-                         </Nav.Item>
-                        </Nav> */}
-                        
+                        <Nav variant="pills" activeKey={props.tab} className='flex-column'>
+                            <Nav.Item className="tab">
+                                <Nav.Link aria-current href='/Portal' eventKey="1"> <DashBoard fontSize='large'/> Home  </Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item className='tab'>
+                                <Nav.Link aria-current href='/UserProfile' eventKey="2" > <AccountBoxIcon fontSize='large' /> User Profile</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item className='tab'>
+                                <Nav.Link aria-current href='/Game' eventKey="3" > <VideogameAssetIcon fontSize='large' /> Game</Nav.Link>
+                            </Nav.Item>
+                        </Nav>
                     </List>
                 </Drawer>
             </div>
