@@ -1,5 +1,6 @@
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import DashBoard from '@material-ui/icons/Dashboard'
+import BarChart from '@material-ui/icons/BarChart'
 import '../CSS/Nav.css'
 import { Navbar, Nav, } from 'react-bootstrap'
 function Navigation(props) {
@@ -17,7 +18,7 @@ function Navigation(props) {
                                 <Nav.Link aria-current href='#/UserProfile' eventKey="2" className='tab'> <AccountBoxIcon fontSize='large'/> User Profile</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link aria-current href='#' eventKey="3" className='tab'>Testing</Nav.Link>
+                                <Nav.Link aria-current href='#/Stats' eventKey="3" className='tab'> <BarChart fontSize='large'/>   Stats</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link aria-current href='#' eventKey="4" className='tab'>Testing</Nav.Link>
