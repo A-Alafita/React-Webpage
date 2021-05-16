@@ -1,0 +1,44 @@
+.sideNav{
+    background-color: #2e353d !important;
+
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 100%;
+}
+
+.optionBox{
+    top: 10px;
+    left: 20px;
+    position: fixed;
+}
+
+.optionsAt{
+    padding: 10px 100px 10px 20px;
+    background-color: aquamarine;
+
+    color: #2e353d !important;
+    text-transform: uppercase;
+}
+.options{
+    padding: 10px 10px 10px 20px;
+}
+
+.wraper{
+    display: flex;
+    width: 100%; 
+    align-items: stretch;
+}
+
+.tab{
+    width: 230px  !important;
+    /* padding-right: 30px; */
+    font-size: large;
+    padding-top: 20px;
+    padding-left: 15px;    
+}
+
+.pad{
+    padding-right: 10px;
+    width: 100px !important;
+}

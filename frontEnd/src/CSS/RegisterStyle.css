@@ -1,0 +1,77 @@
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.RegisterForm{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.89);
+    border-radius:20px;
+    height: 80%;
+    width: 50%;
+    /* padding: 10em 10em 10em; */
+    /* display: inline-block; */
+}
+
+.RegisterBoxTitle{
+    border-radius: 5px;
+    text-align: center;
+    background-color: #35b38d;
+    position: absolute;
+    top: -5%;
+    width: 90%;
+    left: 5%;
+}
+
+.OutDiv{
+    position: relative;
+    padding-top: 15%;
+}
+
+.input{
+    position:relative;
+    margin-bottom:25px;
+    /* display: inline-block; */
+    top: 100%;
+    padding-left: 5%;
+    width: 80%;
+    left: 5%;
+}
+
+.input label{
+    top:0px;
+    left:0px;
+    font-size:16px;
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.input input{ 
+    border:0;
+    border-bottom:1px solid rgb(255, 255, 255);
+    background:transparent;
+    width:100%;
+    padding:8px 0 5px 0;
+    font-size:16px;
+    color:#fff;
+    display: inline-block;
+}
+
+.input input:focus{ 
+    border:none;
+    outline:none;
+    border-bottom:1px solid #6abac5;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label{
+    top:-12px;
+    font-size:12px;
+
+}
